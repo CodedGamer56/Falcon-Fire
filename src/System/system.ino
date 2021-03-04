@@ -1,7 +1,9 @@
-#include"F:\\Projects\\Falcon-Fire\\src\\FalconCore\\FalconCore.h"
+#include"..\\FalconCore\\FalconCore.h"
 
 void setup(){
   FalconCore falcon;
+
+  falcon.beginSession();
 }
 
 void loop(){
