@@ -24,7 +24,6 @@
 >This workflow is not likely to be changed in the future but we still would like to have the community's feedback on this.
 
 ## Contributing
-![Markdown Logo](rsc/contrib.webp)
 * Falcon Fire is free and open sourced which means we welcome your thoughts and ideas on our work and also freely distribute this project to anyone.
 * You are free to raise issues and pull requests
 * Contributions made is likely to be maintained in a separate branch or might be changed in the future.

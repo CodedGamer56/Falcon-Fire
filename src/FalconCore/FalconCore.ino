@@ -1,27 +1,17 @@
 #include"FalconCore.h"
 
 void FalconCore::beginSession(){
-  pinMode(ledGreen, OUTPUT);
-  pinMode(ledRed, OUTPUT);
-
-  readyComponents();
+  //11 - red led
+  //12 - green led
+  pinMode(11,OUTPUT);
+  pinMode(12,OUTPUT);
   
-  while(true){
-    if(readyState == true){
-      digitalWrite(ledGreen, HIGH);
-      break;
-    }
-    digitalWrite(ledRed, HIGH);
-    delay(ledDelays);
-    digitalWrite(ledRed, LOW);
-    delay(ledDelays);
-  }
+  fromFalconCore("Falcon Fire has initialized");
+  digitalWrite(11,HIGH);
+  delay(1000);
+  digitalWrite(11,LOW);
 }
 
 void FalconCore::endSession(){
   
-}
-
-void FalconCore::readyComponents(){
-  readyState = false;
 }
