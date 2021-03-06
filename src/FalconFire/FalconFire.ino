@@ -1,7 +1,8 @@
-#include"..\\FalconCore\\FalconCore.h"
+#include"FalconCore.h"
 
 void setup() {
-  // put your setup code here, to run once:
+
+  beginSession();
 
 }
 
