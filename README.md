@@ -9,7 +9,7 @@
 
 ## Getting Started
 * To get started with this project we recommend you to use the latest Arduino IDE which you can get it from here - [Arduino IDE](https://www.arduino.cc/en/software).
-* Once finished installing the IDE, open up src/FalconCore/FalconCore.ino and src/FalconCore/FalconCore.h and compile the project in the IDE.
+* Once finished installing the IDE, open up src/FalconFire/FalconFire.ino and compile the project in the IDE. Now you can start developing the code.
 * If you cannot compile the project properly then you can raise an issue here - [Falcon Fire Issues](https://github.com/CodedGamer56/Falcon-Fire/issues)
 * Once successfully compiled you can visit the workflow of the project to furthur proceed on developing.
 
