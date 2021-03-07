@@ -5,7 +5,3 @@ void fromFalconCore(String data){
     Serial.println(data);
   }
 }
-
-String receiveEvent(String eventMade){
-
-}

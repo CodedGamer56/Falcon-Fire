@@ -4,3 +4,4 @@
 
 void beginSession();
 void endSession();
+void ledBlinks();
