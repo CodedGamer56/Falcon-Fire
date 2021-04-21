@@ -27,8 +27,6 @@ void beginSession(){
     delay(100);
   }
 
-  fromFalconCore("FalconFire has started");
-
   //servo tests
   for(int i=50; i<=130; i++){
     servoR.write(i);
@@ -58,9 +56,11 @@ void beginSession(){
 
   
   //end of tests
-  fromFalconCore("FalconFire is ready for flight");
+  lcdClear();
+  lcdPrint("Ready for flight");
+  testClear = true;
 }
 
 void endSession(){
-  
+
 }
