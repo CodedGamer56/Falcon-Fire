@@ -1,2 +1,1 @@
-
-void fromFalconCore(String data);
+void systemPrint(String data);

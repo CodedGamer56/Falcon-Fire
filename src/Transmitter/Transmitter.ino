@@ -1,4 +1,4 @@
-#include"gui.h"
+#include"UI.h"
 
 int joyx = A0;
 int joyy = A1;
@@ -18,9 +18,9 @@ void setup(){
   pinMode(joyy,INPUT);
   pinMode(switchJoy, INPUT);
   
-  guiBegin();
-  //connection to serial monitor (only for tests)
-  Serial.println("FalconFire System");
+  uiBegin();
+  
+  Serial.println("FalconFire System has started");
 }
 
 void loop(){
@@ -28,7 +28,7 @@ void loop(){
   joyxval = analogRead(joyx);
   potval = analogRead(pot);
   switchVal = digitalRead(switchJoy);
-  potConverted = (5/1023)* potval;//why is this 5/1023 
+  potConverted = (5/1023)* potval;
 
   Serial.print("JoyX: ");
   Serial.println(joyxval);
@@ -40,9 +40,3 @@ void loop(){
   Serial.println(switchVal);
   delay(100);
 }
-//side note: we should add 3 buttons and one switch
-//also switch turns everything on
-//the three buttons
-//pitch
-//yaw
-//roll

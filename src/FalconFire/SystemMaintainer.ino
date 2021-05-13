@@ -1,6 +1,6 @@
 #include"systemMaintainer.h"
 
-void fromFalconCore(String data){
+void systemPrint(String data){
   if(!(data == "")){
     Serial.println(data);
   }

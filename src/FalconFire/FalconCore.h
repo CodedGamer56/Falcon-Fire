@@ -1,10 +1,15 @@
-#include"Motors.h"
-#include"PID.h"
-#include"systemMaintainer.h"
-#include"receiver.h"
+#include<Servo.h>
 
-void beginSession();
-void endSession();
-//void eventListener();
+class FF_CORE {
+ public:
+        void attachPins();
+        void runTests();
+        
+        Servo servoR;
+        Servo servoL;
+        Servo motorR;
+        Servo motorL;
 
-bool testClear = false;
+        bool testClear = false;
+
+};

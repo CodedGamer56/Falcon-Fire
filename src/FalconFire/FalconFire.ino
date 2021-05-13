@@ -1,9 +1,11 @@
-#include"FalconCore.h"
-#include"Utils.h"
+#include"falconCore.h"
+
+FF_CORE falcon;
 
 void setup() {
   Serial.begin(9600);
-  beginSession();
+  falcon.attachPins();
+  falcon.runTests();
 }
  
 

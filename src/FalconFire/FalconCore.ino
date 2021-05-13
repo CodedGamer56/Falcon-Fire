@@ -1,23 +1,23 @@
-#include"FalconCore.h"
-#include<Servo.h>
+#include"systemMaintainer.h"
 
-void beginSession(){
+void FF_CORE::attachPins(){
   //11 - red led
   //12 - green led
   pinMode(11,OUTPUT);
   pinMode(12,OUTPUT);
-  Servo servoR;
-  Servo servoL;
-  Servo motorR;
-  Servo motorL;
+  
   servoR.attach(9);
   servoL.attach(8);
+  
   motorR.attach(6);
   motorL.attach(7);
+  
   servoR.write(0);
   servoL.write(0);
-  
-  //start sequence
+}
+
+void FF_CORE::runTests(){
+    //start sequence
   for(int i=0; i<3; i++){
     digitalWrite(11,HIGH);
     digitalWrite(12,HIGH);
@@ -52,15 +52,6 @@ void beginSession(){
   motorR.write(1000);
   motorL.write(1000);
 
-  //MPU 6050 Calibration
-
-  
-  //end of tests
-  lcdClear();
-  lcdPrint("Ready for flight");
+  systemPrint("Finished running tests");
   testClear = true;
-}
-
-void endSession(){
-
 }
