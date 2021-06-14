@@ -1,0 +1,37 @@
+body{
+    background-color: black;
+}
+
+.heading{
+    color: orange;
+    font-size: 250px;
+    font-family: 'Cabin', sans-serif;
+    text-shadow: 8px 8px 10px red;
+    text-align: center;
+}
+
+
+.links{
+    font-size: 40px;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.links b:hover{
+    box-shadow: 4px 4px 14px red;
+}
+
+.links b{
+    color: red;
+    padding: 20px;
+    background-color: darkorange;
+    font-style: italic;
+    box-shadow: 4px 4px 4px yellow;
+
+    transition: 0.5s;
+}
+
+.links a{
+    text-decoration: none;
+}

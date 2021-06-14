@@ -1,1 +1,0 @@
-void systemPrint(String data);
